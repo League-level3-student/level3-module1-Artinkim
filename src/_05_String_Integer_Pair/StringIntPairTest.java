@@ -40,7 +40,7 @@ class StringIntPairTest {
 		assertTrue(sip.containsValue(4));
 		assertFalse(sip.containsValue(5));
 	}
-	
+
 	@Test
 	void testGetKeysAndValues() {
 		StringIntegerPair sip = new StringIntegerPair();

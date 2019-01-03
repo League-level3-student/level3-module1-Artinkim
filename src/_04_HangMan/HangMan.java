@@ -83,6 +83,7 @@ public class HangMan implements KeyListener {
 			}
 		} else {
 			lives--;
+			System.out.println(arg0.getKeyChar());
 			label2.setText(lives + "");
 			if (lives <= 0) {
 				JOptionPane.showMessageDialog(null, "the word was " + SCurrent);
