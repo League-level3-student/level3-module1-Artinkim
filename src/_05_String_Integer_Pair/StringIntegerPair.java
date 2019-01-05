@@ -14,14 +14,14 @@ public class StringIntegerPair {
 
 	// 4. Complete the steps in the put method
 	public void put(String key, int value) {
-		boolean ok = true;
+		boolean ok = false;
 		// A. iterate through the keys. If you find a key that matches
 		// the passed in String, set the value at that location to the
 		// passed in value and return from the method.
 		for (int i = 0; i < keys.length; i++) {
 			if (keys[i].equals(key)) {
 				values[i] = value;
-				ok = false;
+				ok = true;
 			}
 		}
 		if (ok == true) {
