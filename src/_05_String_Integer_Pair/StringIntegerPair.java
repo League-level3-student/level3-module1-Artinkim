@@ -14,14 +14,14 @@ public class StringIntegerPair {
 
 	// 4. Complete the steps in the put method
 	public void put(String key, int value) {
-		boolean ok = false;
+		boolean ok = true;
 		// A. iterate through the keys. If you find a key that matches
 		// the passed in String, set the value at that location to the
 		// passed in value and return from the method.
 		for (int i = 0; i < keys.length; i++) {
 			if (keys[i].equals(key)) {
 				values[i] = value;
-				ok = true;
+				ok = false;
 			}
 		}
 		if (ok == true) {
@@ -30,9 +30,9 @@ public class StringIntegerPair {
 			// C. create an integer array that is one element longer than values
 			int[] tempI = new int[values.length + 1];
 			// D. set the last element of the new String array to the passed in key
-			tempS[tempS.length] = key;
+			tempS[tempS.length-1] = key;
 			// E. set the last element of the new int array to the passed in value
-			tempI[tempI.length] = value;
+			tempI[tempI.length-1] = value;
 			// F. iterate through the keys and values and copy the elements to the new
 			// arrays
 			for (int i = 0; i < values.length; i++) {
